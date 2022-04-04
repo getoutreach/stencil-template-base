@@ -1,0 +1,8 @@
+name: stencil-template-base
+arguments: {}
+modules:
+  - name: github.com/getoutreach/stencil-template-base
+
+# We run ourself on... ourself :D
+replacements:
+  github.com/getoutreach/stencil-template-base: ./
