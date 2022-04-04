@@ -1,5 +1,5 @@
 version: v1.9.0
-generated: 2022-04-04T22:47:28.559941Z
+generated: 2022-04-04T22:53:02.375314Z
 modules:
 - name: github.com/getoutreach/stencil-template-base
   url: ./
@@ -20,9 +20,6 @@ files:
 - name: Makefile
   template: Makefile.tpl
   module: github.com/getoutreach/stencil-template-base
-- name: README.md
-  template: README.md.tpl
-  module: github.com/getoutreach/stencil-template-base
 - name: bootstrap.lock
   template: bootstrap.lock.tpl
   module: github.com/getoutreach/stencil-template-base
@@ -34,6 +31,9 @@ files:
   module: github.com/getoutreach/stencil-template-base
 - name: package.json
   template: package.json.tpl
+  module: github.com/getoutreach/stencil-template-base
+- name: scripts/golangci.yml
+  template: scripts/golangci.yml.tpl
   module: github.com/getoutreach/stencil-template-base
 - name: .github/CODEOWNERS
   template: .github/CODEOWNERS.tpl

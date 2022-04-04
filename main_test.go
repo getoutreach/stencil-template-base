@@ -6,11 +6,12 @@ import (
 	"github.com/getoutreach/stencil/pkg/stenciltest"
 )
 
-// Replace this with your own tests.
-func TestRenderAFile(t *testing.T) {
-	st := stenciltest.New(t, "your_file.ext.tpl", "helpers.tpl")
-	st.Args(map[string]interface{}{
-		"argument": true,
-	})
+func TestGoMod(t *testing.T) {
+	st := stenciltest.New(t, "go.mod.tpl")
+	st.Run(false)
+}
+
+func TestMainTest(t *testing.T) {
+	st := stenciltest.New(t, "main_test.go.tpl")
 	st.Run(false)
 }

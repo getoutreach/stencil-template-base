@@ -1,4 +1,4 @@
-// TODO(jaredallard): Make static.
+(*codegen.File)(// TODO(jaredallard): Make static.
 package main
 
 import (
@@ -14,4 +14,4 @@ func TestRenderAFile(t *testing.T) {
 		"argument": true,
 	})
 	st.Run(false)
-}
+})
