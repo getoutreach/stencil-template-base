@@ -8,3 +8,4 @@ modules:
 # We run ourself on... ourself :D
 replacements:
   github.com/getoutreach/stencil-template-base: ./
+  github.com/getoutreach/stencil-base: ../stencil-base
