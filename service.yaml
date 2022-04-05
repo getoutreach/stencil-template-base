@@ -1,0 +1,11 @@
+name: stencil-template-base
+arguments:
+  reportingTeam: fnd-dtss
+modules:
+  - name: github.com/getoutreach/stencil-base
+  - name: github.com/getoutreach/stencil-template-base
+
+# We run ourself on... ourself :D
+replacements:
+  github.com/getoutreach/stencil-template-base: ./
+  github.com/getoutreach/stencil-base: ../stencil-base
