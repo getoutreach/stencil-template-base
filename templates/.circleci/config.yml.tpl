@@ -38,7 +38,7 @@ jobs:
           save: true
       - run:
           name: Release
-          command: GH_TOKEN=$OUTREACH_GITHUB_TOKEN yarn --frozen-lockfile semantic-release
+          command: ./scripts/shell-wrapper.sh ci/release/release.sh
       - shared/save_go_cache
 
 workflows:
