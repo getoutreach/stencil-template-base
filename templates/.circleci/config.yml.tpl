@@ -1,5 +1,5 @@
 {{- define "devbase.version" }}
-{{- "1.55.1" }}
+{{- "1.55.2" }}
 {{- end }}
 version: 2.1
 
