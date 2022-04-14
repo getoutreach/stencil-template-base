@@ -1,3 +1,4 @@
 name: github.com/getoutreach/stencil-template-base
 modules:
   - name: github.com/getoutreach/stencil-base
+  - name: github.com/getoutreach/stencil-circleci
