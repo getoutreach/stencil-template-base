@@ -1,4 +1,10 @@
 name: github.com/getoutreach/stencil-template-base
+###Block(keys)
 modules:
   - name: github.com/getoutreach/stencil-base
   - name: github.com/getoutreach/stencil-circleci
+arguments:
+  org:
+    type: string
+    description: Optional org override, uses box config by default
+###EndBlock(keys)
