@@ -9,5 +9,6 @@ import (
 
 func TestGoMod(t *testing.T) {
 	st := stenciltest.New(t, "go.mod.tpl")
+	st.Args(map[string]interface{}{"org": "getoutreach"})
 	st.Run(false)
 }
