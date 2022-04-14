@@ -2,4 +2,7 @@
 
 module github.com/getoutreach/testing
 
-go 1.17)
+go 1.17
+
+require github.com/getoutreach/stencil testing
+)
