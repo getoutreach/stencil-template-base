@@ -1,3 +1,4 @@
+{{ file.Skip "Helper function" }}
 {{- define "toolVersions" }}
 - name: golang
   version: 1.18.1
