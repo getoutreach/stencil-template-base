@@ -1,4 +1,4 @@
-// TODO(jaredallard): Make static.
+{{- $_ := file.Static }}
 package main
 
 import (
