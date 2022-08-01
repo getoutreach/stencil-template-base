@@ -1,3 +1,6 @@
+{{- if not (stencil.Arg "plugin") }}
+{{ file.Skip "not a plugin, no need to build go assets" }}
+{{- end }}
 before:
   hooks:
     - make dep
@@ -12,8 +15,8 @@ builds:
       - amd64
       - arm64
     ldflags:
-      - '-w -s -X "github.com/getoutreach/gobox/pkg/app.Version=v{{ .Version }}"'
-      - '-X "main.HoneycombTracingKey={{ .Env.HONEYCOMB_APIKEY }}"'
+      - '-w -s -X "github.com/getoutreach/gobox/pkg/app.Version=v{{`{{ .Version }}`}}"'
+      - '-X "main.HoneycombTracingKey={{`{{ .Env.HONEYCOMB_APIKEY }}`}}"'
     env:
       - CGO_ENABLED=0
 archives: []
