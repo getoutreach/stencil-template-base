@@ -3,14 +3,9 @@ name: github.com/getoutreach/stencil-template-base
 modules:
   - name: github.com/getoutreach/stencil-base
   - name: github.com/getoutreach/stencil-circleci
-  - name: github.com/getoutreach/stencil-golang # this is conditional (only needed if plugin: true)
 arguments:
   org:
     schema:
       type: string
     description: Optional org override, uses box config by default.
-  plugin:
-    schema:
-      type: boolean
-    description: Set this to true if the repository this is creating is acting as a stencil plugin.
 ###EndBlock(keys)
