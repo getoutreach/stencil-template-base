@@ -4,6 +4,8 @@
 [![Generated via Bootstrap](https://img.shields.io/badge/Outreach-Bootstrap-%235951ff)](https://github.com/getoutreach/bootstrap)
 [![Coverage Status](https://coveralls.io/repos/github/getoutreach/stencil-template-base/badge.svg?branch=main)](https://coveralls.io/github//getoutreach/stencil-template-base?branch=main)
 
+Stencil template repository for template repositories
+
 ## Contributing
 
 Please read the [CONTRIBUTING.md](CONTRIBUTING.md) document for guidelines on developing and contributing changes.

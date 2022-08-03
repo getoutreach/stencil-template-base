@@ -1,6 +1,7 @@
 name: stencil-template-base
 arguments:
-  reportingTeam: fnd-dtss
+  description: Stencil template repository for template repositories
+  reportingTeam: fnd-dt
 modules:
   - name: github.com/getoutreach/stencil-base
     version: v0.2.1-rc.1
