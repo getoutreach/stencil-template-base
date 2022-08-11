@@ -1,10 +1,10 @@
 {{ file.Skip "Helper function" }}
 {{- define "toolVersions" }}
 - name: golang
-  version: 1.19
+  version: '1.19'
 # Not used for gRPC clients
 - name: nodejs
-  version: 16.14.2
+  version: '16.14.2'
 {{- end }}
 
 # Registers our versions w/ stencil-base
