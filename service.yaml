@@ -2,11 +2,11 @@ name: stencil-template-base
 arguments:
   description: Stencil template repository for template repositories
   reportingTeam: fnd-dt
+  releaseOptions:
+    allowMajorVersions: true
 modules:
   - name: github.com/getoutreach/stencil-base
-    version: v0.2.1-rc.1
   - name: github.com/getoutreach/stencil-circleci
-    version: v0.1.4-rc.1
   - name: github.com/getoutreach/stencil-template-base
 
 # We run ourself on... ourself :D
