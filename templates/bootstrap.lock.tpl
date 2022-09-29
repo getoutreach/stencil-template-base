@@ -1,4 +1,5 @@
+# HACK(jaredallard): Remove when stencil-base is cleaned up and bootstrap
+# is dead.
+version: v11.0.2
 versions:
-  # HACK(jaredallard): Remove when stencil-base is cleaned up and bootstrap
-  # is dead.
-  devbase: v2.4.0-rc.5
+  devbase: v2.4.4
