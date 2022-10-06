@@ -1,4 +1,5 @@
 {{- if not (stencil.Arg "plugin") }}
+# TODO: Merge this with stencil-golang's
 {{ file.Skip "not a plugin, no need to build go assets" }}
 {{- end }}
 before:

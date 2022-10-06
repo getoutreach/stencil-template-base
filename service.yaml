@@ -1,6 +1,7 @@
 name: stencil-template-base
 arguments:
   description: Stencil template repository for template repositories
+  oss: true
   reportingTeam: fnd-dt
   releaseOptions:
     allowMajorVersions: true
