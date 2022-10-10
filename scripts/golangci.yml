@@ -1,5 +1,20 @@
-# HACK(jaredallard): Remove when stencil-base is cleaned up.
 # yaml-language-server: $schema=https://json.schemastore.org/golangci-lint
+lintroller:
+  tier: "platinum"
+
+severity:
+  default-severity: error
+  case-sensitive: false
+  rules:
+    - severity: warning
+      # New rule, add as warning for now
+      text: "^(redundantSprint|ioutilDeprecated|octalLiteral):"
+      linters:
+        - gocritic
+    - severity: warning
+      # New rule, add as warning for now
+      linters:
+        - errorlint
 
 # Linter settings
 linters-settings:
