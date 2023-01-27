@@ -6,9 +6,10 @@ arguments:
   releaseOptions:
     allowMajorVersions: true
 modules:
-  - name: github.com/getoutreach/stencil-base
-  - name: github.com/getoutreach/stencil-circleci
   - name: github.com/getoutreach/stencil-template-base
+  - name: github.com/getoutreach/stencil-circleci
+  - name: github.com/getoutreach/devbase
+    channel: rc
 
 # We run ourself on... ourself :D
 replacements:

@@ -23,22 +23,22 @@
       // <<Stencil::Block(vscodeRemoteDebug)>>
       "host": "127.0.0.1",
       "port": 42097,
-    // <</Stencil::Block>>
+      // <</Stencil::Block>>
       "substitutePath": [
         {
           "from": "${workspaceRoot}",
           "to": "/home/dev/app"
         },
         {
-          "from": "${env:HOME}/.asdf/installs/golang/1.19/packages/pkg/mod",
+          "from": "${env:HOME}/.asdf/installs/golang/1.19.2/packages/pkg/mod",
           "to": "/tmp/cache/go/mod/"
         },
         {
-          "from": "${env:HOME}/.asdf/installs/golang/1.19/go/src",
-          "to": "/home/dev/.asdf/installs/golang/1.19/go/src"
+          "from": "${env:HOME}/.asdf/installs/golang/1.19.2/go/src",
+          "to": "/home/dev/.asdf/installs/golang/1.19.2/go/src"
         }
-      ],
-    },
+      ]
+    }
     // <<Stencil::Block(vscodeLaunchConfigs)>>
 
     // <</Stencil::Block>>
