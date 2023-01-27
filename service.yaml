@@ -5,6 +5,8 @@ arguments:
   reportingTeam: fnd-dt
   releaseOptions:
     allowMajorVersions: true
+  ciOptions:
+    skipDocker: true
 modules:
   - name: github.com/getoutreach/stencil-template-base
   - name: github.com/getoutreach/stencil-circleci
