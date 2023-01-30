@@ -12,7 +12,10 @@ arguments:
 modules:
   - name: github.com/getoutreach/stencil-template-base
   - name: github.com/getoutreach/stencil-circleci
+    channel: rc
   - name: github.com/getoutreach/devbase
+    channel: rc
+  - name: github.com/getoutreach/stencil-golang
     channel: rc
 
 # We run ourself on... ourself :D
