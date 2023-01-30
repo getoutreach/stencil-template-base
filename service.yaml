@@ -4,9 +4,11 @@ arguments:
   oss: true
   reportingTeam: fnd-dt
   releaseOptions:
-    allowMajorVersions: true
+    enablePrereleases: true
+    prereleasesBranch: rc
   ciOptions:
     skipDocker: true
+    skipE2e: true
 modules:
   - name: github.com/getoutreach/stencil-template-base
   - name: github.com/getoutreach/stencil-circleci
