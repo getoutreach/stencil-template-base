@@ -9,6 +9,9 @@ modules:
     - name: github.com/getoutreach/stencil-circleci
       url: https://github.com/getoutreach/stencil-circleci
       version: v1.6.1
+    - name: github.com/getoutreach/stencil-discovery
+      url: https://github.com/getoutreach/stencil-discovery
+      version: v1.3.3
     - name: github.com/getoutreach/stencil-golang
       url: https://github.com/getoutreach/stencil-golang
       version: v1.6.2
