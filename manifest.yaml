@@ -2,7 +2,7 @@ name: github.com/getoutreach/stencil-template-base
 ## <<Stencil::Block(keys)>>
 modules:
   - name: github.com/getoutreach/stencil-base
-    version: ">=0.7.0-rc.1"
+    version: ">=0.7.0"
   - name: github.com/getoutreach/stencil-golang
 arguments:
   org:
