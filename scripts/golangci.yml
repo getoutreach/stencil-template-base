@@ -7,22 +7,45 @@ linters-settings:
   errcheck:
     check-blank: true
   govet:
-    check-shadowing: true
+    enable:
+      - shadow
   revive:
-    confidence: 0
+    rules:
+      # Enable the default golint rules. We must include these because
+      # we configure a single rule, which disables the default rules.
+      - name: blank-imports
+      - name: context-as-argument
+      - name: context-keys-type
+      - name: dot-imports
+      - name: error-return
+      - name: error-strings
+      - name: error-naming
+      - name: exported
+      - name: increment-decrement
+      - name: var-naming
+      - name: var-declaration
+      - name: package-comments
+      - name: range
+      - name: receiver-naming
+      - name: time-naming
+      - name: unexported-return
+      - name: indent-error-flow
+      - name: errorf
+      - name: empty-block
+      - name: superfluous-else
+      - name: unreachable-code
+      - name: redefines-builtin-id
+      # While we agree with this rule, right now it would break too many
+      # projects. So, we disable it by default.
+      - name: unused-parameter
+        disabled: true
   gocyclo:
     min-complexity: 25
-  maligned:
-    suggest-new: true
   dupl:
     threshold: 100
   goconst:
     min-len: 3
     min-occurrences: 3
-  depguard:
-    list-type: blacklist
-  misspell:
-    locale: US
   lll:
     line-length: 140
   gocritic:
@@ -34,10 +57,6 @@ linters-settings:
       - style
     disabled-checks:
       - whyNoLint # Doesn't seem to work properly
-      # Suggests bad simplifications (After is not identical to !Before).
-      # TODO(jkinkead): Remove when we have a version of go-critic with
-      # https://github.com/go-critic/go-critic/pull/1281 merged.
-      - timeCmpSimplify
   funlen:
     lines: 500
     statements: 50
@@ -47,12 +66,11 @@ linters:
   disable-all: true
   enable:
     - bodyclose
-    - depguard
+    - copyloopvar # Detects places where loop variables are copied.
     - dogsled
     - errcheck
     - errorlint
     - exhaustive # Checks exhaustiveness of enum switch statements.
-    - exportloopref # Checks for pointers to enclosing loop variables.
     - funlen
     - gochecknoinits
     - goconst
@@ -76,6 +94,7 @@ linters:
     - whitespace
 
 issues:
+  max-same-issues: 10
   exclude:
     # We allow error shadowing
     - 'declaration of "err" shadows declaration at'
@@ -87,7 +106,6 @@ issues:
       linters:
         - gocyclo
         - errcheck
-        - dupl
         - gosec
         - funlen
         - gochecknoglobals # Globals in test files are tolerated.
@@ -101,8 +119,13 @@ issues:
       text: "SA5011"
       linters:
         - staticcheck
+    - linters:
+        - lll
+      source: "^//go:generate "
 
 output:
-  format: colored-line-number
+  formats:
+    - format: colored-line-number
+      path: stdout
   sort-results: true
   print-severity: true
