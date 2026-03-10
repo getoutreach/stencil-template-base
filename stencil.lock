@@ -2,16 +2,16 @@ version: v1.43.1
 modules:
     - name: github.com/getoutreach/devbase
       url: https://github.com/getoutreach/devbase
-      version: v2.35.2-rc.1
+      version: v2.36.0-rc.1
     - name: github.com/getoutreach/stencil-base
-      url: https://github.com/getoutreach/stencil-base
-      version: v0.18.0
+      url: file://../stencil-base
+      version: local
     - name: github.com/getoutreach/stencil-circleci
       url: https://github.com/getoutreach/stencil-circleci
       version: v1.17.2
     - name: github.com/getoutreach/stencil-golang
-      url: https://github.com/getoutreach/stencil-golang
-      version: v1.30.0
+      url: file://../stencil-golang
+      version: local
     - name: github.com/getoutreach/stencil-template-base
       url: file://./
       version: local
@@ -61,6 +61,9 @@ files:
     - name: .vscode/settings.json
       template: .vscode/settings.json.tpl
       module: github.com/getoutreach/stencil-golang
+    - name: AGENTS.md
+      template: AGENTS.md.tpl
+      module: github.com/getoutreach/stencil-base
     - name: LICENSE
       template: LICENSE.tpl
       module: github.com/getoutreach/stencil-base
