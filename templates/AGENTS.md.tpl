@@ -1,22 +1,17 @@
 {{- file.Skip "Virtual file for AGENTS.md module hooks" }}
 
-{{- define "templateQuickStart" }}
+{{- define "templateDirectoryStructure" }}
+* `templates/`: Templates for generating project files, such as `AGENTS.md.tpl` for the AGENTS.md file. Used in stencil-modules to define the structure and content of generated files.
 {{- end }}
 
-{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "projectQuickStart" (list (stencil.ApplyTemplate "templateQuickStart")) }}
+{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "directoryStructure" (list (stencil.ApplyTemplate "templateDirectoryStructure")) }}
 
-{{- define "templateProjectDirectories" }}
-* `templates/`: Templates for generating project files, such as `AGENTS.md.tpl` for the AGENTS.md file.
+{{- define "templateAgentsComponents" }}
 {{- end }}
 
-{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "projectDirectories" (list (stencil.ApplyTemplate "templateProjectDirectories")) }}
+{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsComponents" (list (stencil.ApplyTemplate "templateAgentsComponents")) }}
 
-{{- define "templateProjectCommands" }}
+{{- define "templateAgentsOther" }}
 {{- end }}
 
-{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "projectCommands" (list (stencil.ApplyTemplate "templateProjectCommands")) }}
-
-{{- define "templateProjectCodeStyle" }}
-{{- end }}
-
-{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "projectCodeStyle" (list (stencil.ApplyTemplate "templateProjectCodeStyle")) }}
+{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsOther" (list (stencil.ApplyTemplate "templateAgentsOther")) }}
