@@ -5,7 +5,7 @@ Ignore lines containing "Stencil::Block"; they are areas in your generated code 
 ## Project purpose
 
 <!-- <<Stencil::Block(projectPurpose)>> -->
-
+Stencil template repository for template repositories
 <!-- <</Stencil::Block>> -->
 
 ## Directory structure
