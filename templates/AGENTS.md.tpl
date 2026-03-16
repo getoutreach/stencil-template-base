@@ -6,10 +6,10 @@
 
 {{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "directoryStructure" (list (stencil.ApplyTemplate "templateDirectoryStructure")) }}
 
-{{- define "templateAgentsComponents" }}
+{{- define "templateAgentsReferences" }}
 {{- end }}
 
-{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsComponents" (list (stencil.ApplyTemplate "templateAgentsComponents")) }}
+{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsReferences" (list (stencil.ApplyTemplate "templateAgentsReferences")) }}
 
 {{- define "templateAgentsOther" }}
 {{- end }}
