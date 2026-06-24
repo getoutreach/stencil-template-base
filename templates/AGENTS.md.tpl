@@ -4,12 +4,12 @@
 * `templates/`: Templates for generating project files, such as `AGENTS.md.tpl` for the AGENTS.md file. Used in stencil-modules to define the structure and content of generated files.
 {{- end }}
 
-{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "directoryStructure" (list (stencil.ApplyTemplate "templateDirectoryStructure")) }}
+{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsDirectoryStructure" (list (stencil.ApplyTemplate "templateDirectoryStructure")) }}
 
 {{- define "templateAgentsReferences" }}
 {{- end }}
 
-{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsReferences" (list (stencil.ApplyTemplate "templateAgentsReferences")) }}
+{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsReferencesTable" (list (stencil.ApplyTemplate "templateAgentsReferences")) }}
 
 {{- define "templateAgentsOther" }}
 {{- end }}
