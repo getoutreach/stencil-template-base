@@ -5,7 +5,7 @@ Ignore lines containing "Stencil::Block"; they are areas in your generated code 
 ## Description
 
 <!-- <<Stencil::Block(agentsProjectOverview)>> -->
-
+Stencil template repository for template repositories
 <!-- <</Stencil::Block>> -->
 
 ## Project overview
