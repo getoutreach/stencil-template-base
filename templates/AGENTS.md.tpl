@@ -5,13 +5,3 @@
 {{- end }}
 
 {{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsDirectoryStructure" (list (stencil.ApplyTemplate "templateDirectoryStructure")) }}
-
-{{- define "templateAgentsReferences" }}
-{{- end }}
-
-{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsReferencesTable" (list (stencil.ApplyTemplate "templateAgentsReferences")) }}
-
-{{- define "templateAgentsOther" }}
-{{- end }}
-
-{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsOther" (list (stencil.ApplyTemplate "templateAgentsOther")) }}
