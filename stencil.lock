@@ -1,17 +1,17 @@
-version: v1.42.0-rc.2
+version: v1.43.2
 modules:
     - name: github.com/getoutreach/devbase
       url: https://github.com/getoutreach/devbase
-      version: v2.31.1
+      version: v2.39.0-rc.1
     - name: github.com/getoutreach/stencil-base
       url: https://github.com/getoutreach/stencil-base
-      version: v0.16.5-rc.2
+      version: v0.19.0
     - name: github.com/getoutreach/stencil-circleci
       url: https://github.com/getoutreach/stencil-circleci
-      version: v1.16.1-rc.1
+      version: v1.18.0
     - name: github.com/getoutreach/stencil-golang
       url: https://github.com/getoutreach/stencil-golang
-      version: v1.26.1-rc.2
+      version: v1.32.0-rc.6
     - name: github.com/getoutreach/stencil-template-base
       url: file://./
       version: local
@@ -24,7 +24,7 @@ files:
       module: github.com/getoutreach/stencil-base
     - name: .gitattributes
       template: .gitattributes.tpl
-      module: github.com/getoutreach/stencil-golang
+      module: github.com/getoutreach/stencil-base
     - name: .github/CODEOWNERS
       template: .github/CODEOWNERS.tpl
       module: github.com/getoutreach/stencil-base
@@ -67,15 +67,15 @@ files:
     - name: Makefile
       template: Makefile.tpl
       module: github.com/getoutreach/stencil-golang
-    - name: devenv.yaml
-      template: devenv.yaml.tpl
-      module: github.com/getoutreach/stencil-golang
     - name: go.mod
       template: go.mod.tpl
       module: github.com/getoutreach/stencil-golang
     - name: manifest.yaml
       template: manifest.yaml.tpl
       module: github.com/getoutreach/stencil-template-base
+    - name: mise.toml
+      template: mise.toml.tpl
+      module: github.com/getoutreach/stencil-base
     - name: package.json
       template: package.json.tpl
       module: github.com/getoutreach/stencil-base
