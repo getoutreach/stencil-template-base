@@ -17,6 +17,8 @@ modules:
     channel: rc
   - name: github.com/getoutreach/stencil-golang
     channel: rc
+  - name: github.com/getoutreach/stencil-base
+    channel: rc
 
 # We run ourself on... ourself :D
 replacements:
