@@ -38,6 +38,7 @@ make lint # Run linters on project's code.
 * CONTRIBUTING.md: File containing guidelines for contributing to the project.
 * docs/: Directory used to store documentation files and reference materials for the project.
 * `templates/`: Templates for generating project files, such as `AGENTS.md.tpl` for the AGENTS.md file. Used in stencil-modules to define the structure and content of generated files.
+* `.snapshots/`: Contains snapshot files for testing template rendering outputs.
 <!-- <<Stencil::Block(directoryStructureCustom)>> -->
 
 <!-- <</Stencil::Block>> -->
