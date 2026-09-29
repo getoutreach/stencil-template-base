@@ -65,12 +65,11 @@ If you need more context, you can find more information in `docs/` directory.
 ## Boundaries
 
 ### Always
+- run `make test` before push to remote to regenerate snapshots
 - Run `go mod tidy` after adding, removing or upgrading Go dependencies
 - Run `make gogenerate` after modifying protobuf definitions or interfaces with generated code
 - Add context to errors using `fmt.Errorf("...: %w", err)`
 - Prefer `gotest.tools/v3/assert` in tests over `github.com/stretchr/testify` or hand-rolled assertions
-- run `mise stencil:upgrade` before commit on every change of file in `templates` directory
-- run `make test` before push to remote to regenerate snapshots
 <!-- <<Stencil::Block(agentsBoundariesAlwaysCustom)>> -->
 
 <!-- <</Stencil::Block>> -->
