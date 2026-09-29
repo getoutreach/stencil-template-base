@@ -6,3 +6,9 @@
 {{- end }}
 
 {{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsDirectoryStructure" (list (stencil.ApplyTemplate "templateDirectoryStructure")) }}
+
+{{- define "templateBoundariesAlways" }}
+- run `mise stencil:upgrade` before commit on every change of file in `templates` directory
+{{- end }}
+
+{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsBoundariesAlways" (list (stencil.ApplyTemplate "templateBoundariesAlways")) }}

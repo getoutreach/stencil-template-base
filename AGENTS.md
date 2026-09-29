@@ -65,6 +65,7 @@ If you need more context, you can find more information in `docs/` directory.
 ## Boundaries
 
 ### Always
+- run `mise stencil:upgrade` before commit on every change of file in `templates` directory
 - Run `go mod tidy` after adding, removing or upgrading Go dependencies
 - Run `make gogenerate` after modifying protobuf definitions or interfaces with generated code
 - Add context to errors using `fmt.Errorf("...: %w", err)`
