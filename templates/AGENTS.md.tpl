@@ -9,6 +9,7 @@
 
 {{- define "templateBoundariesAlways" }}
 - run `mise stencil:upgrade` before commit on every change of file in `templates` directory
+- run `make test` before push to remote to regenerate snapshots
 {{- end }}
 
 {{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsBoundariesAlways" (list (stencil.ApplyTemplate "templateBoundariesAlways")) }}
