@@ -6,3 +6,9 @@
 {{- end }}
 
 {{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsDirectoryStructure" (list (stencil.ApplyTemplate "templateDirectoryStructure")) }}
+
+{{- define "templateBoundariesAlways" }}
+- run `make test` before push to remote to regenerate snapshots
+{{- end }}
+
+{{ stencil.AddToModuleHook "github.com/getoutreach/stencil-base" "agentsBoundariesAlways" (list (stencil.ApplyTemplate "templateBoundariesAlways")) }}

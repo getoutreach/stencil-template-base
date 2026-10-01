@@ -65,6 +65,7 @@ If you need more context, you can find more information in `docs/` directory.
 ## Boundaries
 
 ### Always
+- run `make test` before push to remote to regenerate snapshots
 - Run `go mod tidy` after adding, removing or upgrading Go dependencies
 - Run `make gogenerate` after modifying protobuf definitions or interfaces with generated code
 - Add context to errors using `fmt.Errorf("...: %w", err)`

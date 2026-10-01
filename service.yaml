@@ -5,7 +5,7 @@ arguments:
   reportingTeam: fnd-dt
   releaseOptions:
     enablePrereleases: true
-    prereleasesBranch: rc
+    prereleasesBranch: main
   ciOptions:
     skipDocker: true
     skipE2e: true
