@@ -49,8 +49,6 @@ test: &test
 release_branches: &release_branches # Release branch
   - "release"
   # Pre-releases branch
-  - "rc"
-  # Unstable branch, e.g. HEAD development
   - "main"
 
 ## <<Stencil::Block(circleAnchorExtra)>>
@@ -139,7 +137,7 @@ workflows:
           filters:
             branches:
               only:
-                - rc
+                - main
       # Dryrun for PRs
       - shared/pre-release: &pre-release
           dryrun: true
